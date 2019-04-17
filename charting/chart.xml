@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<data>
+	<title>Sheridan Forecast and Sales for 2016</title>
+	<month name="January">
+		<forecast>65</forecast>
+		<sales>28</sales>
+	</month>
+	<month name="February">
+		<forecast>20</forecast>
+		<sales>92</sales>
+	</month>
+	<month name="March">
+		<forecast>50</forecast>
+		<sales>100</sales>
+	</month>
+	<month name="April">
+		<forecast>81</forecast>
+		<sales>91</sales>
+	</month>
+	<month name="May">
+		<forecast>56</forecast>
+		<sales>96</sales>
+	</month>	
+	<month name="June">
+		<forecast>55</forecast>
+		<sales>27</sales>
+	</month>
+	<month name="July">
+		<forecast>40</forecast>
+		<sales>60</sales>
+	</month>
+</data>

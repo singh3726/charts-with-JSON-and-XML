@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>jQuery Mobile</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+	<link rel="stylesheet" href="_css/jquery.mobile.css">
+	<link rel="stylesheet" href="_css/mystyles.css">
+	
+	<script src="_js/jquery.js"></script>
+	<script src="_js/jquery.mobile.js"></script>
+	<script src="_js/Chart.js"></script>				<!-- added -->
+	<script src="_js/myscript.js"></script>
+	
+	<style>
+		.legendformat {
+			font-size: 1.25em;
+			color: black;
+		}
+	</style>
+</head>
+<body>
+	<div data-role="page" id="charts" data-theme="a">
+		<header data-role="header">
+			<h1 class="ui-title ui-shadow">Charts</h1>
+		</header>
+
+		<section class="ui-content" role="main">
+			<ul data-role="listview">
+				<li><a href="#line">Line Chart (from XML)</a></li>
+				<li><a href="#barxml">Bar Chart (from XML)</a></li>
+				<li><a href="#barjson">Bar Chart (from JSON)</a></li>
+				<li><a href="#pie">Pie Chart (from JSON)</a></li>
+			</ul>
+		</section>
+
+		<footer data-role="footer">
+			<h1 class="ui-title ui-shadow">Charts</h1>
+		</footer>
+	</div> 
+
+	<div data-role="page" id="line" data-theme="a">
+		<header data-role="header">
+			<h1 class="ui-title ui-shadow">Line Chart</h1>
+		</header>
+
+		<section class="ui-content" role="main">
+			<h1 id="linehead"></h1>
+			<section id="linelegend"></section>
+			<hr>
+			<canvas id="lineCanvas" height="450" width="600"></canvas>			
+		</section>
+	</div>
+
+		<div data-role="page" id="barxml" data-theme="a">
+		<header data-role="header">
+			<h1 class="ui-title ui-shadow">Bar Chart</h1>
+		</header>
+
+		<section class="ui-content" role="main">
+			<canvas id="barxmlCanvas" height="450" width="600"></canvas>	
+			<section id="legend"></section>			
+		</section>
+	</div> 
+	
+	<div data-role="page" id="barjson" data-theme="a">
+		<header data-role="header">
+			<h1 class="ui-title ui-shadow">Bar Chart<br>Planet Radius</h1>
+		</header>
+
+		<section class="ui-content" role="main">
+			<canvas id="barjsonCanvas" height="450" width="600"></canvas>				
+		</section>
+	</div> 
+
+	<div data-role="page" id="pie" data-theme="a">
+		<header data-role="header">
+			<h1 class="ui-title ui-shadow">Pie Chart</h1>
+		</header>
+
+		<section class="ui-content" role="main">
+			<h2>Planet Radius Comparison</h2>
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<canvas id="pieCanvas" height="500" width="500"></canvas>
+				</div>
+				<div class="ui-block-b">
+					<br>
+					<div id="pieLegend" class="legendformat"></div>
+				</div>
+			</div>
+		</section>
+	</div>
+	
+</body>
+</html>
